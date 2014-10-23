@@ -8,5 +8,9 @@ public class Main {
             President p2 = President.getPresident();
             p2.setAge(25);
             System.out.println(p.getAge());
+
+            Person person = new PresidentAdapter();
+            System.out.println(person.getYearOfBirth());
+
         }
 }
